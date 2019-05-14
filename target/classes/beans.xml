@@ -17,6 +17,12 @@
 
 <!--    </bean>-->
 
+    <bean id = "lifecycledemo" class="com.stackroute.domain.LifeCycleDemo" init-method="customInit" destroy-method="customDestroy">
+    </bean>
+
+    <bean id = "postprocessdemo" class="com.stackroute.domain.PostProcessorDemo" >
+    </bean>
+
 
     <bean id ="Actor" class="com.stackroute.domain.task1.Actor" >
 
