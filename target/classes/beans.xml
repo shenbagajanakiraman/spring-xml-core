@@ -38,9 +38,6 @@
 
         <constructor-arg index="2" value="35" />
 
-<!--        <property name="name" value="Chris Hemsworth"/>-->
-<!--        <property name="gender" value="Male"/>-->
-<!--        <property name="age" value="35"/>-->
 
     </bean>
 
