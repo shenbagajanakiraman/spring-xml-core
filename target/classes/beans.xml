@@ -32,33 +32,26 @@
 
     <bean id ="actor3" class="com.stackroute.domain.task1.Actor">
 
-        <constructor-arg index="0" value="Chris Hemsworth" />
 
-        <constructor-arg index="1" value="Male" />
-
-        <constructor-arg index="2" value="35" />
-
-<!--        <property name="name" value="Chris Hemsworth"/>-->
-<!--        <property name="gender" value="Male"/>-->
-<!--        <property name="age" value="35"/>-->
+        <property name="name" value="Chris Hemsworth"/>
+        <property name="gender" value="Male"/>
+        <property name="age" value="35"/>
 
     </bean>
 
     <bean id = "movie1" class="com.stackroute.domain.task1.Movie" scope="prototype" >
-<!--        <property name="actor" ref="actor1"/>-->
-        <constructor-arg name="actor" ref="actor1"/>
+        <property name="actor" ref="actor1"/>
+
 
     </bean>
 
     <bean id = "movie2" class="com.stackroute.domain.task1.Movie"  >
-<!--        <property name="actor" ref="actor2"/>-->
-        <constructor-arg name="actor" ref="actor2"/>
+        <property name="actor" ref="actor2"/>
 
     </bean>
 
     <bean id = "movie3" class="com.stackroute.domain.task1.Movie" >
-<!--        <property name="actor" ref="actor3"/>-->
-        <constructor-arg name="actor" ref="actor3"/>
+        <property name="actor" ref="actor3"/>
 
     </bean>
 </beans>
