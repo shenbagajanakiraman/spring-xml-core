@@ -10,13 +10,13 @@ public class Main {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 
-        Movie movie = (Movie)context.getBean("movie");
-        System.out.println(movie);
+//        Movie movie = (Movie)context.getBean("movie");
+//        System.out.println(movie);
 
-//        Movie movie1 = (Movie)context.getBean("movie4");
-//        System.out.println(movie1);
+        Movie movie1 = (Movie)context.getBean("movie1");
+        System.out.println(movie1);
 
-//        Movie movie2 = (Movie)context.getBean("movie5");
-//        System.out.println(movie2);
+        Movie movie2 = (Movie)context.getBean("movie2");
+        System.out.println(movie2);
     }
 }
