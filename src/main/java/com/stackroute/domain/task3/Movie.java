@@ -1,16 +1,24 @@
-package com.stackroute.domain.task1;
+package com.stackroute.domain.task3;
 
-import com.stackroute.domain.task1.Actor;
 
+import com.stackroute.domain.task3.Actor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Movie {
-
     private Actor actor;
 
     public Movie() {
 
     }
 
+@Autowired
     public Movie(Actor actor) {
+
+        actor.setAge(25);
+        actor.setName("Arjun");
+        actor.setGender("Male");
 
         this.actor = actor;
     }
