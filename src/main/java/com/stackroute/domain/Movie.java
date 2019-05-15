@@ -1,12 +1,12 @@
-package com.stackroute.domain.task1;
+package com.stackroute.domain;
 
-import com.stackroute.domain.task1.Actor;
+import com.stackroute.domain.Actor;
 
 public class Movie {
 
     private Actor actor;
 
-    public Movie() {
+    public Movie(String actor) {
 
     }
 
